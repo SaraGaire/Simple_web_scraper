@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Web Scraper Output Demo</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1a1a1a;
+            color: #00ff00;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .terminal {
+            background: #000;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .command {
+            color: #ffff00;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            color: #00ffff;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+        }
+        
+        .separator {
+            color: #666;
+            margin: 10px 0;
+        }
+        
+        .section-header {
+            color: #ff6b6b;
+            font-weight: bold;
+            margin: 15px 0 5px 0;
+        }
+        
+        .article {
+            margin: 10px 0;
+            padding: 5px 0;
+        }
+        
+        .article-title {
+            color: #87ceeb;
+            font-weight: bold;
+        }
+        
+        .link {
+            color: #90ee90;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+        
+        .quote-text {
+            color: #dda0dd;
+            font-style: italic;
+        }
+        
+        .author {
+            color: #ffa500;
+            margin-left: 20px;
+        }
+        
+        .repo {
+            color: #add8e6;
+        }
+        
+        .success {
+            color: #00ff00;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .emoji {
+            font-family: Arial, sans-serif;
+        }
+        
+        .loading {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="command">$ go run main.go</div>
+        
+        <div class="title"><span class="emoji">🕷️</span>  Go Web Scraper Demo</div>
+        <div class="separator">========================================</div>
+        
+        <div class="section-header"><span class="emoji">📰</span> Scraping Hacker News headlines...</div>
+        <div>Found 30 articles:</div>
+        <br>
+        
+        <div class="article">
+            <div class="article-title">1. Show HN: I built a tool to visualize sorting algorithms in real-time</div>
+            <div class="link"><span class="emoji">🔗</span> https://github.com/username/sorting-visualizer</div>
+        </div>
+        
+        <div class="article">
+            <div class="article-title">2. Meta's new AI model can generate video from text prompts</div>
+            <div class="link"><span class="emoji">🔗</span> https://techcrunch.com/2024/meta-ai-video-generation</div>
+        </div>
+        
+        <div class="article">
+            <div class="article-title">3. Why SQLite is perfect for edge computing applications</div>
+            <div class="link"><span class="emoji">🔗</span> https://sqlite.org/edge-computing-guide</div>
+        </div>
+        
+        <div class="article">
+            <div class="article-title">4. The hidden costs of microservices architecture</div>
+            <div class="link"><span class="emoji">🔗</span> https://martinfowler.com/microservices-costs</div>
+        </div>
+        
+        <div class="article">
+            <div class="article-title">5. Building a distributed database from scratch in Go</div>
+            <div class="link"><span class="emoji">🔗</span> https://news.ycombinator.com/item?id=38942156</div>
+        </div>
+        
+        <div class="section-header"><span class="emoji">💭</span> Scraping quotes...</div>
+        <div>Found 10 quotes:</div>
+        <br>
+        
+        <div class="article">
+            <div>1. <span class="quote-text">"The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking."</span></div>
+            <div class="author">   - Albert Einstein</div>
+        </div>
+        
+        <div class="article">
+            <div>2. <span class="quote-text">"It is our choices, Harry, that show what we truly are, far more than our abilities."</span></div>
+            <div class="author">   - J.K. Rowling</div>
+        </div>
+        
+        <div class="article">
+            <div>3. <span class="quote-text">"There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle."</span></div>
+            <div class="author">   - Albert Einstein</div>
+        </div>
+        
+        <div class="section-header"><span class="emoji">🔧</span> Using generic scraper for GitHub trending...</div>
+        <div>Found 25 trending repositories:</div>
+        <br>
+        
+        <div class="article">
+            <div class="repo">1. microsoft/playwright</div>
+        </div>
+        
+        <div class="article">
+            <div class="repo">2. openai/whisper</div>
+        </div>
+        
+        <div class="article">
+            <div class="repo">3. vercel/next.js</div>
+        </div>
+        
+        <div class="article">
+            <div class="repo">4. facebook/react</div>
+        </div>
+        
+        <div class="article">
+            <div class="repo">5. golang/go</div>
+        </div>
+        
+        <div class="success"><span class="emoji">✅</span> Scraping completed!</div>
+        
+        <div style="margin-top: 30px; color: #666; font-size: 12px;">
+            <div>💡 This is what your Go web scraper output will look like in the terminal</div>
+            <div>📊 Total execution time: ~2-3 seconds</div>
+            <div>🌐 Data scraped from 3 different websites</div>
+        </div>
+    </div>
+</body>
+</html>
