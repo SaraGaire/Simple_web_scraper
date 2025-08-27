@@ -8,4 +8,14 @@ go mod init web-scraper
 go get github.com/PuerkitoBio/goquery
 
 #Run the scraper
+
 go run main.go
+
+Key Go concepts demonstrated:
+
+HTTP requests using net/http
+HTML parsing with goquery (jQuery-like selectors)
+Structs for organizing data
+Error handling with proper error wrapping
+Slices and maps for data storage
+String manipulation with the strings package
